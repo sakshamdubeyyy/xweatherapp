@@ -38,9 +38,9 @@ export default function WeatherDisplay({city}) {
           {!loading && weatherData && (
             <div className={styles.weatherCard}>
               <WeatherCard title="Temprature" data={`${weatherData.current.temp_c}°C`}/>
-              <WeatherCard title="Humidity" data={`${weatherData.humidity}°C`}/>
-              <WeatherCard title="Condition" data={`${weatherData.current.condition.text}°C`}/>
-              <WeatherCard title="Wind Speed" data={`${weatherData.wind_kph}°C`}/>
+              <WeatherCard title="Humidity" data={`${weatherData.current.humidity}%`}/>
+              <WeatherCard title="Condition" data={`${weatherData.current.condition.text}`}/>
+              <WeatherCard title="Wind Speed" data={`${weatherData.current.wind_kph} kph`}/>
             </div>
           )}
         </div>
